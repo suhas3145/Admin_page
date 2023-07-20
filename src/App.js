@@ -1,12 +1,22 @@
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Topbar from "./components/topbar/Topbar";
+import Sidebar from "./components/sidebar/Sidebar"
+import "./app.css"
+
 
 function App() {
   return (
-    <Router>
-    <Topbar/>
-    </Router>
+    <div>
+
+      <Topbar/>
+      <div className="container">
+        <Sidebar/>
+      </div>
+
+    </div>
+    
+    
       
     
   );
